@@ -1,0 +1,97 @@
+
+  
+{
+	instructions {
+		"numerals": {
+			"1": "ที่ 1",
+			"2": "ที่ 2",
+			"3": "ที่ 3",
+			"4": "ที่ 4",
+			"5": "ที่ 5",
+			"6": "ที่ 6",
+			"7": "ที่ 7",
+			"8": "ที่ 8",
+			"9": "ที่ 9",
+			"10": "ที่ 10"
+		},
+		"directions": {
+			"north": "ทิศเหนือ",
+			"northeast": "ทิศตะวันออกเฉียงเหนือ",
+			"east": "ทิศตะวันออก",
+			"southeast": "ทิศตะวันออกเฉียงใต้",
+			"south": "ทิศใต้",
+			"southwest": "ทิศตะวันตกเฉียงใต้",
+			"west": "ทิศตะวันตก",
+			"northwest": "ทิศตะวันตกเฉียงเหนือ"
+		},
+		"turn_maneuvers": {
+			"left": "ซ้าย",
+			"right": "ขวา",
+			"sharp_left": "ชิดซ้าย",
+			"sharp_right": "ชิดขวา",
+			"slight_left": "ซ้ายเล็กน้อย",
+			"slight_right": "ขวาเล็กน้อย",
+			"straight": "ตรงไป",
+			"uturn": "ยูเทร์น"
+		},
+		"actions": {
+			"arrive": {
+           		 	"default": {
+		                "default": "ถึงจุดหมายปลายทางของคุณ",
+						"name": "มาถึงที่ {way_name}"
+                	},
+					"left": {
+						"default": "ถึงจุดหมายปลายทางของคุณ, ด้านซ้าย",
+						"name": "มาถึงที่ {way_name}, ด้านซ้าย"
+					},
+					"right": {
+						"default": "ถึงจุดหมายปลายทางของคุณ, ด้านขวา",
+						"name": "มาถึงที่ {way_name}, ด้านขวา"
+					},
+					"straight": {
+						"default": "ถึงจุดหมายปลายทางของคุณ , ตรงไปข้างหน้า",
+						"name": "ถึงที่ {way_name}, ตรงไปข้างหน้า"
+					}
+			},          
+			"depart": {
+				"default": {
+					"default": "มุ่งหน้าไป {direction}",
+					"name": "มุ่งหน้าไป {direction} บน {way_name}"
+				}
+			},
+			"roundabout": {
+				"default": {
+					"exit": {
+						"default": "เข้าสู่วงเวียน และใช้ทางออก  {exit_number}",
+						"name": "เข้าสู่วงเวียน และใช้ทางออก  {exit_number} เข้าสู่ {way_name}"
+					},
+					"default": {
+						"default": "เข้าสู่วงเวียน",
+						"name": "เข้าสู่วงเวียนและออกไปยัง {way_name}"
+					}
+				}
+			},
+			"turn": {
+				"default": {
+					"default": "เลี้ยว {turn_maneuver}",
+					"name": "เลี้ยว {turn_maneuver} เข้าสู่  {way_name}",
+				},
+			},
+			"continue": {
+				"default": {
+					"default": "ต่อไป {turn_maneuver}",
+					"name": "ขับต่อไป {turn_maneuver} เข้าสู่ {way_name}"
+				},
+				"uturn": {
+					"default": "กลับรถ",
+					"name": "กลับรถ เข้าสู่ {way_name}"
+				}
+			}
+			"keep": {
+				"default": {
+					"default": "ให้ {turn_maneuver}",
+					"name": "ให้ {turn_maneuver} เข้าสู่ {way_name}"
+				},
+			}
+		}
+	}
